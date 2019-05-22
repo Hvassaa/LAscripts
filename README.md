@@ -1,8 +1,10 @@
-# LA-scripts til lineær algebra 2019
+LA-scripts til lineær algebra 2019
+==================================
 
 Her følger en liste af funktioner og en beskrivelse.
 
 ## ekspFunk(A, F):
+
 Til at tjekke om en funktion
 er en eksponentialfunktion for
 en kvadratisk matrix.
