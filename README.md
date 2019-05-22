@@ -23,3 +23,22 @@ def F(t):
     <kode>...
 ```
 
+## diffLig(A, F, v)
+
+(Ved brug af 15.12 eller 15.15)
+
+Til at finde at finde løsningen z til 
+et differentialligningssystemet:
+
+x' = Ax
+
+med begyndelsesværdi v.
+
+A = den kvadratiske matrix 
+
+F = A's eksponential funktion
+
+(Hvis ikke der er sådan en, skriv bare 0 i stedet)
+
+v = begyndelsesværdien (vektor)
+
