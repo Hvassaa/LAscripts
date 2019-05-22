@@ -11,9 +11,11 @@ en kvadratisk matrix.
 Følger def. 15.2
 
 A = den kvadratiske matrix
+
 F = funktionen der skal tjekkes
 
 A skal være en matrix
+
 F skal defineres som normalt:
 
 ```python
