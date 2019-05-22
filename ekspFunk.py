@@ -11,20 +11,11 @@ def ekspFunk15_2(A, F):
 
     A = den kvadratiske matrix
     F = funktionen der skal tjekkes
-    t = variablen/parameteren til F
 
     A skal være en matrix
     F skal defineres som normalt:
         def F(t):
             <kode>...
-    t skal være erklæret som en variabel:
-        t = symbols("t")
-
-    Endelig kaldes metoden som
-    ekspFunk15_2(A, F, t)
-    og ikke
-    ekspFunk15_2(A, F(t), t)
-    eller lignende.
     """
 
     # Tjek at matrixen faktisk er kvadratisk
