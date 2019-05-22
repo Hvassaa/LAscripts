@@ -49,4 +49,5 @@ def ekspFunk15_2(A, F):
         return False
 
     # Alle holdte
+    print("Pr. definition 15.2, er F en eksponentialfunktion for F")
     return True
