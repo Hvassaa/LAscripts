@@ -1,10 +1,11 @@
 from sympy import *
-A = Matrix([[5,2,-1],[2,2,2],[-1,2,5]])
 
 
 def singleNicePrint(x):
     pprint(x, use_unicode=True)
-
+"""
+Tjekker om en Matrix er invertibel
+"""
 
 def invertable(m):
     # Checks if matrix is quadratic
@@ -20,5 +21,5 @@ def invertable(m):
     print("Da matricen ikke er kvadratisk kan den ikke være invertibel")
 
 
-invertable(A)
+
 
