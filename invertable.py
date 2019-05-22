@@ -4,7 +4,7 @@ from sympy import *
 def singleNicePrint(x):
     pprint(x, use_unicode=True)
 """
-Tjekker om en Matrix er invertibel
+Tjekker om en Matrix er invertibel ved brug af 4.8
 """
 
 def invertable(m):

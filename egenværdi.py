@@ -6,6 +6,13 @@ def singleNicePrint(x):
 
 
 def egenvalue(m: Matrix):
+    """
+    Laver først det karekteristiske poly med def 12.17
+    Herefter findes egenværdier med prop 12.18
+    Til sidst findes egenrum for hver af egenværdierne med lemma 12.11
+
+    :param m: Matrix
+    """
     # Først laves det karekteristiske P :
     t = symbols("t")
     P = det(m-eye(m.shape[0])*t)
