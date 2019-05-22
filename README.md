@@ -14,13 +14,11 @@ A = den kvadratiske matrix
 
 F = funktionen der skal tjekkes
 
-A skal være en matrix
-
 F skal defineres som normalt:
 
 ```python
 def F(t):
-    <kode>...
+	return ...
 ```
 
 ## diffLig(A, F, v)
@@ -42,3 +40,9 @@ F = A's eksponential funktion
 
 v = begyndelsesværdien (vektor)
 
+F skal defineres som normalt:
+
+```python
+def F(t):
+	return ...
+```
