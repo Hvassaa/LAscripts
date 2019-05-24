@@ -2,7 +2,7 @@
 
 from sympy import *
 
-def ekspFunk15_2(A, F):
+def ekspFunk(A, F):
     """
     Til at tjekke om en funktion
     er en eksponentialfunktion for
