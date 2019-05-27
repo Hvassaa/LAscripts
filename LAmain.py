@@ -5,11 +5,13 @@ init_printing(use_unicode=True)
 print("sympy importeret\nUnicode sat")
 
 from ekspFunk import *
-#from egenværdi import *
-#from invertable import *
+from egenværdi import *
+from invertable import *
 from diffLig import *
 from mindsteKvadrater import *
+from singulær import *
 from sympy import *
+from nulrum import *
 init_printing(use_unicode=True)
 print("sympy importeret\nUnicode sat")
 
@@ -21,16 +23,16 @@ print("Alle scripts importeret")
 
 # Nogle test-værdier
 testM = Matrix([
-        [5,2,-1],
-        [2,2,2],
-        [-1,2,5]
+        [1,-1,0],
+        [-1,0,1],
+        [0,1,-1]
         ])
 
 testBegVær = Matrix([
         [1],
-        [0],
-        [1]
+        [0]
         ])
 
 def testF(t):
     return (S(1)/6)*exp(6*t)*A-(S(1)/6)*A+eye(3)
+

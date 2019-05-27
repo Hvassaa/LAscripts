@@ -11,6 +11,7 @@ def singleNicePrint(x):
 def mindsteKvadrater(A,b):
     """
     Her bruges prop. 14.52 til at finde alle mindstes kvadraters løsninger.
+
     Vær opmærksom på hvordan du laver din vector.
     b=Matrix([[4],[4],[4]]) giver:
     ⎡4⎤
@@ -54,5 +55,3 @@ def mindsteKvadrater(A,b):
     print("HJÆLP TIL FORSTÅELSE:")
     print("α er løsningen til øverste osv")
     print("Hvis en variabel ikke fremgår i på venstresiden af et kolon er det fordi den er lig med en anden")
-
-mindsteKvadrater(A,b)

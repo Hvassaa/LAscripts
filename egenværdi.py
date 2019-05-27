@@ -1,5 +1,5 @@
 from sympy import *
-A=Matrix([[5,2,-1],[2,2,2],[-1,2,5]])
+A=Matrix([[3,-2],[1,0]])
 
 def singleNicePrint(x):
     pprint(x, use_unicode=True)
@@ -21,7 +21,7 @@ def egenvalue(m: Matrix):
     singleNicePrint("P = " + str(P))
     print("Jvf. prop 12.18(pdf) kan man nu finde egenværdier ved at løse P = 0:")
     singleNicePrint(eV)
-    print("Jvf. Lemma 12.11 findes de to egenrum:")
+    print("Jvf. Lemma 12.11 findes egenrummene:")
     for e in eV:
         eR = (m - e*eye(m.shape[0])).nullspace()
         print("E("+str(e)+") :")
