@@ -46,3 +46,19 @@ F skal defineres som normalt:
 def F(t):
 	return ...
 ```
+
+## gs(*args)
+
+Ved brug af 10.25.
+En funktion til at udskrive mellemregninger
+i Gram-Schmidt processen. Dobbeltjek evt.
+med GramSchmidt() metoden fra Sympy.
+
+funktionen tager en vilkårlig lang liste
+af vektorer som den udfører GramSchmidt på.
+
+(så funktionen kaldes gs(v1, v2, v3 ... ))
+
+Betydningen af det printede (u og p) stemmer 
+overens med lemma 10.25.
+
