@@ -10,7 +10,7 @@ def singleNicePrint(x):
 
 def mindsteKvadrater(A,b):
     """
-    Her bruges prop. 14.52 til at finde alle mindstes kvadraters løsninger.
+    Her bruges prop. 10.42 til at finde alle mindstes kvadraters løsninger.
 
     Vær opmærksom på hvordan du laver din vector.
     b=Matrix([[4],[4],[4]]) giver:
@@ -23,7 +23,7 @@ def mindsteKvadrater(A,b):
     :param A: Matrix
     :param b: Vector(Matrix)
     """
-    print("jvf. prop. 14.52(pdf 2019) kan mindstes kvadraters løsninger findes på følgende måde:")
+    print("jvf. prop. 10.42(pdf 2019) kan mindstes kvadraters løsninger findes på følgende måde:")
     ATA = Matrix(transpose(A) * A)
     print("AᵀA = ")
     pprint(ATA)
@@ -34,24 +34,32 @@ def mindsteKvadrater(A,b):
     system = ATA.col_insert(ATA.shape[1], ATb)
     print("Nu løses ligningsystemet:")
     pprint(system)
+
+    pprint(system.rref()[0])
     if ATA.shape[0] == 1:
         print("Med variablen α")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α))
     if ATA.shape[0] == 2:
         print("Med variabler α, β")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β))
     if ATA.shape[0] == 3:
         print("Med variabler α, β, γ")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ))
     if ATA.shape[0] == 4:
         print("Med variabler α, β, γ, δ")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ))
     if ATA.shape[0] == 5:
         print("Med variabler α, β, γ, δ, ϵ")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ))
     if ATA.shape[0] == 6:
         print("Med variabler α, β, γ, δ, ϵ, ζ")
+        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ, ζ))
     print("HJÆLP TIL FORSTÅELSE:")
-    print("α er løsningen til øverste osv")
-    print("Hvis en variabel ikke fremgår i på venstresiden af et kolon er det fordi den er lig med en anden")
+    print("α er første ubekendte, β anden osv...")
+    print("Hvis en variabel ikke fremgår i på venstresiden af et kolon er det fordi den er fri")
