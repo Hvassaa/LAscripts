@@ -8,6 +8,12 @@ from ekspFunk import *
 #from egenværdi import *
 #from invertable import *
 from diffLig import *
+from mindsteKvadrater import *
+from sympy import *
+init_printing(use_unicode=True)
+print("sympy importeret\nUnicode sat")
+
+
 
 print("Alle scripts importeret")
 
