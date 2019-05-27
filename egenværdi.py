@@ -28,5 +28,3 @@ def egenvalue(m: Matrix):
         singleNicePrint(eR)
 
 
-egenvalue(A)
-
