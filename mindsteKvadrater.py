@@ -34,31 +34,25 @@ def mindsteKvadrater(A,b):
     system = ATA.col_insert(ATA.shape[1], ATb)
     print("Nu løses ligningsystemet:")
     pprint(system)
-
+    print("RREF:")
     pprint(system.rref()[0])
     if ATA.shape[0] == 1:
         print("Med variablen α")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α))
     if ATA.shape[0] == 2:
         print("Med variabler α, β")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β))
     if ATA.shape[0] == 3:
         print("Med variabler α, β, γ")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ))
     if ATA.shape[0] == 4:
         print("Med variabler α, β, γ, δ")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ))
     if ATA.shape[0] == 5:
         print("Med variabler α, β, γ, δ, ϵ")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ))
     if ATA.shape[0] == 6:
         print("Med variabler α, β, γ, δ, ϵ, ζ")
-        print("RREF:")
         singleNicePrint(solve_linear_system(system, α, β, γ, ϵ, ζ))
     print("HJÆLP TIL FORSTÅELSE:")
     print("α er første ubekendte, β anden osv...")
