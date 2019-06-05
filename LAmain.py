@@ -22,25 +22,7 @@ print("Alle scripts importeret")
 
 
 
-# Nogle test-værdier
-testM = Matrix([
-        [5,2,-1],[2,2,2],[-1,2,5]
-        ])
-
-testBegVær = Matrix([
-        [2],
-        [1],
-        [0]
-        ])
-vec = Matrix([
-        [1],
-        [-2],
-        [1]
-])
 
 def testF(t):
     return (S(1)/6)*exp(6*t)*A-(S(1)/6)*A+eye(3)
 
-egenvalue(testM)
-gs(vec)
-system = S
