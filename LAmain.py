@@ -12,6 +12,7 @@ from mindsteKvadrater import *
 from singulær import *
 from sympy import *
 from nulrum import *
+from gs import *
 init_printing(use_unicode=True)
 print("sympy importeret\nUnicode sat")
 
