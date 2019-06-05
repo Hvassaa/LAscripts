@@ -22,17 +22,6 @@ print("Alle scripts importeret")
 
 
 
-# Nogle test-værdier
-testM = Matrix([
-        [1,-1,0],
-        [-1,0,1],
-        [0,1,-1]
-        ])
-
-testBegVær = Matrix([
-        [1],
-        [0]
-        ])
 
 def testF(t):
     return (S(1)/6)*exp(6*t)*A-(S(1)/6)*A+eye(3)

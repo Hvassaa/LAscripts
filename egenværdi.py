@@ -7,6 +7,10 @@ def singleNicePrint(x):
 
 def egenvalue(m: Matrix):
     """
+    !!Hvis du skal finde egenværdier til en lineæroperator!!
+    !!fortæller def 12.25 og prop 12.26 at du kan bruge   !!
+    !!matrixræpresentationen : v[L]v og finde egenværdier !!
+    !!for denne. BEMÆRK at begge baser i ræp er de samme  !!
     Laver først det karekteristiske poly med def 12.17
     Herefter findes egenværdier med prop 12.18
     Til sidst findes egenrum for hver af egenværdierne med lemma 12.11
