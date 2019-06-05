@@ -57,3 +57,21 @@ def mindsteKvadrater(A,b):
     print("HJÆLP TIL FORSTÅELSE:")
     print("α er første ubekendte, β anden osv...")
     print("Hvis en variabel ikke fremgår i på venstresiden af et kolon er det fordi den er fri")
+
+def mindsteKvadrater2(_M, _B):
+    nTotalM = _M.T * _M
+    nTotalB = _M.T * _B
+    nTotal = nTotalM.row_join(nTotalB)
+    nTotalRREF = nTotal.rref()[0]
+    nDone = (_M.nullspace()[0] * α) + nTotalRREF.col(-1)
+
+    print("\n\u262D Normalligningen (Brugt til MKL) (M^T * M)x = M^T * B :")
+    print("MKL = Mindste Kvadraters Løsninger")
+    pprint(nTotalM, use_unicode=True)
+    print(" = ")
+    pprint(nTotalB, use_unicode=True)
+    print("Normalligningen på RREF:")
+    pprint(nTotalRREF, use_unicode=True)
+    print("Normalligningen færdig:")
+    pprint(nDone, use_unicode=True)
+    print()
