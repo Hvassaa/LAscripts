@@ -39,10 +39,8 @@ def ekspFunk(A, F):
     # 2.
     if nsimplify(A*F(t))==diff(F(t),t):
         print("2: Da F' = A * F er andet krav opfyldt")
-        print("F':")
+        print("F' og A*F:")
         pprint(diff(F(t),t))
-        print("A * F:")
-        pprint(A*F(t))
     else:
         print("2: Fejler")
         return False
@@ -50,10 +48,8 @@ def ekspFunk(A, F):
     # 3.
     if A*F(t)==F(t)*A:
         print("3: Da F * A = A * F er tredje og sidste krav opfyldt")
-        print("F*A:")
-        pprint(F*A)
-        print("A*F:")
-        pprint(A*F)
+        print("F*A og A*F:")
+        pprint(A*F(t))
     else:
         print("3: Fejler")
         return False

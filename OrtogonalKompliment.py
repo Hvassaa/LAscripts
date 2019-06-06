@@ -1,9 +1,5 @@
 from sympy import *
-testM = Matrix([
-        [1,-1,0],
-        [-1,0,1],
-        [0,1,-1]
-        ])
+
 # a, b, c, d, e, f, g, h, i, j, k, l, m = symbols("a, b, c, d, e, f, g, h, i, j, k, l, m")
 from sympy.abc import a,b,c,d,e,f
 

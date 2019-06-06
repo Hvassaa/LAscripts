@@ -1,5 +1,4 @@
 from sympy import *
-A=Matrix([[3,-2],[1,0]])
 
 def singleNicePrint(x):
     pprint(x, use_unicode=True)
