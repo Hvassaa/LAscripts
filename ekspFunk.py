@@ -29,21 +29,31 @@ def ekspFunk(A, F):
 
     # 1.
     if F(0) == eye(dim[0]):
-        print("1: Holder")
+        print("1: Da F(0)  = I er første krav opfyldt")
+        print("F(0):")
+        pprint(F(0))
     else:
         print("1: Fejler")
         return False
 
     # 2.
     if nsimplify(A*F(t))==diff(F(t),t):
-        print("2: Holder")
+        print("2: Da F' = A * F er andet krav opfyldt")
+        print("F':")
+        pprint(diff(F(t),t))
+        print("A * F:")
+        pprint(A*F(t))
     else:
         print("2: Fejler")
         return False
 
     # 3.
     if A*F(t)==F(t)*A:
-        print("3: Holder")
+        print("3: Da F * A = A * F er tredje og sidste krav opfyldt")
+        print("F*A:")
+        pprint(F*A)
+        print("A*F:")
+        pprint(A*F)
     else:
         print("3: Fejler")
         return False
