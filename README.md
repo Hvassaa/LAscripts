@@ -1,6 +1,13 @@
 LA-scripts til lineær algebra 2019
 ==================================
 
+For at bruge, (specefikt i den interaktive python shell) så sørg for at være i den rette mappe, kør python3 (eller ipython3) og som den første kommando, kør 
+```python
+from LAmain import *
+```
+Jeg oplever at (i hvert fald ipython3) ikke kan finde LAmain, hvis man lader den tab-complete navnet, LAmain, så pas på med det og tast det selv?
+
+
 Her følger en liste af funktioner og en beskrivelse.
 
 ## ekspFunk(A, F):
