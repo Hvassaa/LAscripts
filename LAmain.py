@@ -20,5 +20,3 @@ testA=Matrix([[5,2,-1],[2,2,2],[-1,2,5]])
 
 def testF(t):
     return (S(1)/6)*exp(6*t)*testA-(S(1)/6)*testA+eye(3)
-
-ekspFunk(testA,testF)
